@@ -41,11 +41,11 @@ Good luck and have fun! 🚀
     ```
 3. **Compile the project**:
     ```sh
-    javac -d bin src/main/*.java src/util/*.java
+    javac -d bin src/main/*.java src/util/*.java src/modes/*.java
     ```
 4. **Run the application**:
     ```sh
-    java -cp bin main.Game
+    java -cp bin main.App
     ```
 
 ## Dependencies

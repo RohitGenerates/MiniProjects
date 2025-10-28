@@ -63,10 +63,13 @@ public class User implements Serializable {
         animate.animateText("Enter the Initial Deposit ", 25);
         this.balance = sc.nextDouble();
         sc.nextLine();
-        } while (this.balance < 0);
-
-        this.transactionHistory = new ArrayList<>();
-        transactionHistory.add(new Transaction("Deposit", this.balance, "Initial Deposit"));
+    } while (this.balance < 0);
+    
+    this.transactionHistory = new ArrayList<>();
+    transactionHistory.add(new Transaction("Deposit", this.balance, "Initial Deposit"));
+    
+    animate.animateText("Sucessfully created Account ", 25);
+    animate.animateText("Going back to login... ", 25);
     }
     // public void adminCreateAcc(Scanner sc){//admin user
     //     animate.animateText("Creating a new admin ", 25);
